@@ -73,15 +73,88 @@ img {
     padding: 0;
 }
 
-productos{
+.productos{
+    margin-top: 5rem;
 
 }
 
-productos__heading{
-   color: aliceblue;
+.productos__heading{
+    text-align: center;
+    color: var(--blanco);
+    padding: 2rem;
 }
 
-productos__grid{
-    
+@media  (min-width:768px){
+    .productos__grid{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 2rem;
+        
+         
+     }
 }
 
+.producto {
+    background-color: var(--blanco);
+    border-radius: 10px;
+}
+
+.producto__imagen{
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+
+.producto__contenido{
+    padding: 2rem;
+   
+}
+
+.producto__nombre{
+    font-size: 4rem;
+}
+
+.producto__descripcion{
+    color: #8b8b8b;
+    margin: 0;
+}
+
+.producto__precios{
+    display: flex;
+    justify-content: space-between;
+}
+
+.producto__precio{
+    color: green;
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+.producto__boton{
+    all: unset;
+    background-color: var(--azul);
+    width: 100%;
+    color: #FFF;
+    border-color: var(--azul);
+    text-align: center;
+    font-size: 2rem;
+    padding: 5px;
+    border-radius: 5px;
+  
+}
+
+.producto__boton:hover{
+   cursor: pointer;
+   background-color: #01619d;
+  
+}
+
+.producto__precio--sale{
+    color: #ff4f1e;
+    text-decoration: line-through;
+}
+
+
+.footer{
+    height: 4rem;
+}
